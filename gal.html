@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Galentine’s with Prisha 💕</title>
+
+  <!-- Elegant Vogue-style font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #FFD1DC, #F4C2C2);
+      font-family: 'Playfair Display', serif;
+      color: #E75480;
+      text-align: center;
+    }
+
+    .container {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-bottom: 40px;
+      color: #FF91A4;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(231, 84, 128, 0.25);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.75);
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 15px 40px rgba(231, 84, 128, 0.25);
+      margin-top: 40px;
+    }
+
+    .card p {
+      font-size: 1.3rem;
+      line-height: 1.7;
+    }
+
+    .ask {
+      margin-top: 30px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #E75480;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 36px;
+      background: #E75480;
+      color: #FFD1DC;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #FF91A4;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 1rem;
+      color: #FF91A4;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Hey Prisha 💕</h1>
+    <h2>Because Galentine’s Day deserves *us*</h2>
+
+    <!-- IMAGE GALLERY -->
+    <div class="gallery">
+      <img src="prisha1.jpg" alt="Prisha pic 1">
+      <img src="prisha2.jpg" alt="Prisha pic 2">
+      <img src="prisha3.jpg" alt="Prisha pic 3">
+    </div>
+
+    <!-- MESSAGE CARD -->
+<div class="ask">
+  Will you be my Galentine this Valentine’s Day? 💌
+</div>
+
+<div class="buttons">
+  <button class="btn yes" onclick="sayYes()">Yes 💖</button>
+  <button class="btn no" id="noBtn" onclick="moveNo()">No 🙄</button>
+</div>
+
+<p id="noText"></p>
+
+
+    <footer>
+      Made with 💗 and elite friendship energy
+    </footer>
+  </div>
+</body>
+</html>
